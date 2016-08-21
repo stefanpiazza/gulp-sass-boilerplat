@@ -1,1 +1,1 @@
-# gulp-sass-boilerplat
+# gulp-sass-boilerplate

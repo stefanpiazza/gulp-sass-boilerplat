@@ -4,7 +4,7 @@ var gulp = require('gulp')
 
 gulp.task('styles', function() {
 	gulp.src('./src/scss/styles.scss')
-		.pipe(sass({outputStyle: 'compressed'})
+		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(gulp.dest('./dest/css'))
 		.pipe(browserSync.reload({stream: true}))
 });

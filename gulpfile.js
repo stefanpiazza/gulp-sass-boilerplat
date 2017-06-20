@@ -5,7 +5,7 @@ var gulp = require('gulp')
 
 
 gulp.task('styles', function() {
-	gulp.src('./src/**/*.scss')
+	gulp.src('./src/scss/**/*.scss')
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 		.pipe(autoprefixer({
             browsers: ['> 1%', 'IE 7'],
@@ -23,7 +23,7 @@ gulp.task('serve', function() {
 		port: 3005,
 	});
 
-	gulp.watch('./src/**/*.scss', ['styles']);
+	gulp.watch('./src/scss/**/*.scss', ['styles']);
 	gulp.watch('./**/*.html').on('change', browserSync.reload);
 });
 
